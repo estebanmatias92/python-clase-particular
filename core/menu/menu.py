@@ -9,7 +9,7 @@ def print_options(options):
     print("    MENU    ")
     print("============")
     print("\n")
-    print("Exercises: ", [elem for elem in options])
+    print("Exercises:", [elem for elem in options])
     print("Exit: (0)")
 
 
@@ -27,7 +27,9 @@ def launch_exercise(option):
     # Prepare the file path
     abs_path = Path(__file__)
     parent_dir = abs_path.parent.parent.absolute()
-    exercise_file = str(parent_dir) + "/exercises/ejercicio_" + str(option) + ".py"
+    exercise_file = (
+        str(parent_dir) + "/exercises/ejercicio_" + str(option) + ".py"
+    )
 
     # Print aesthetics and exec the file
     print("")
