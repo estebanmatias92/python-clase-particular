@@ -15,7 +15,7 @@ class JuegoAhorcado:
 
     def _print_main_screen(self):
         # Show the player their progress
-        print("\nYou have {} tries left.".format(self.__tries))
+        print("\nYou have {} tries {}.".format(self.__tries, "left"))
         # print("Used letters: {}".format(" ".join(self.__guessed_letters)))
         print("Word: {}".format(self._get_clues()))
 
